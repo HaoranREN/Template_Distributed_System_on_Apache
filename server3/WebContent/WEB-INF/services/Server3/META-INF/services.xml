@@ -1,0 +1,10 @@
+<service scope = 'application' name="Server3" >
+	<Description>
+		This is server3 of CMSC 621 Fall 2018 project - distributed system.
+	</Description>
+	<messageReceivers>
+		<messageReceiver mep="http://www.w3.org/ns/wsdl/in-only" class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver" />
+		<messageReceiver  mep="http://www.w3.org/ns/wsdl/in-out"  class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	</messageReceivers>
+	<parameter name="ServiceClass" locked="false">server3.Server3</parameter>
+</service>
